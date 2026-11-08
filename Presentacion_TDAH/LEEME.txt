@@ -1,0 +1,96 @@
+PRESENTACIÓN INTERACTIVA SOBRE EL TDAH
+=====================================
+
+Máster Universitario en Profesorado de Educación Secundaria Obligatoria y
+Bachillerato, Formación Profesional y Enseñanza de Idiomas
+Asignatura: Aprendizaje y desarrollo de la personalidad
+
+¿QUÉ ES?
+---------
+Esta es una presentación web interactiva de 14 diapositivas sobre el
+trastorno por déficit de atención e hiperactividad (TDAH). Además de
+consultar sus contenidos, puedes explorar imágenes, un cerebro 3D y
+actividades que ayudan a explicar algunos conceptos durante la exposición.
+
+CÓMO ABRIR LA PRESENTACIÓN
+--------------------------
+1. Descarga el archivo ZIP de la presentación.
+2. Descomprime TODO su contenido en una carpeta de tu ordenador.
+3. Abre esa carpeta y haz doble clic en «index.html».
+4. La presentación se abrirá en tu navegador. Se recomienda Google Chrome
+   o Microsoft Edge.
+
+¡Eso es todo! No hay que instalar programas adicionales, extensiones ni
+bibliotecas. Tampoco hace falta poner en marcha un servidor web.
+
+IMPORTANTE:
+- No abras «index.html» desde el interior del ZIP: extráelo primero.
+- Mantén todos los archivos y carpetas juntos, sin cambiar sus nombres ni
+  moverlos de sitio, para que carguen las imágenes y las animaciones.
+- La presentación funciona sin conexión a Internet. Para abrir enlaces
+  externos a libros o estudios científicos sí necesitas conexión.
+
+CÓMO MOVERSE POR LAS DIAPOSITIVAS
+--------------------------------
+- Flecha derecha, Espacio o AvPág: siguiente diapositiva.
+- Flecha izquierda o RePág: diapositiva anterior.
+- Inicio / Fin: ir a la primera / última diapositiva.
+- Índice: pulsa sobre un apartado para ir directamente a él.
+- F: activar o salir del modo de pantalla completa.
+- ?: abrir la ayuda de controles dentro de la presentación.
+- Esc: cerrar ventanas emergentes o cancelar efectos.
+
+También puedes usar los controles de la barra inferior.
+
+EFECTOS QUE PUEDES ACTIVAR CON EL TECLADO
+----------------------------------------
+- M: mostrar u ocultar una mosca que revolotea por la pantalla.
+- B: desenfocar temporalmente los textos de la diapositiva; vuelve a
+  pulsarla para recuperar la nitidez antes de tiempo.
+- S: reproducir un aviso sonoro breve.
+- D: en la diapositiva de estrategias, desordenar progresivamente las letras
+  de las seis tarjetas. Sus textos vuelven después a la normalidad.
+- R: detener los efectos y restablecer los textos de las tarjetas.
+
+ELEMENTOS INTERACTIVOS DE LA PRESENTACIÓN
+-----------------------------------------
+
+Cerebro 3D
+- Gira lentamente de manera automática.
+- Arrastra con el ratón para cambiar la orientación y utiliza la rueda
+  para acercarlo o alejarlo.
+- Los botones «PAUSAR GIRO» y «CENTRAR» controlan el movimiento y la vista.
+- Pulsa las tarjetas o usa las teclas 1, 2 y 3 para explorar los conceptos:
+  dopamina, corteza prefrontal y redes neuronales.
+- Pulsa 0 para volver a la vista natural del cerebro.
+- La corteza prefrontal se presenta sin coloreado adicional.
+
+Características del TDAH
+- Pulsa «Inatención», «Hiperactividad» o «Impulsividad» para ver la
+  información de cada apartado.
+- Si vuelves a pulsar la opción activa, reaparece la ilustración inicial.
+- El botón «Consultar libro» abre la referencia bibliográfica en el navegador.
+
+Estrategias educativas
+- Pulsa las tarjetas para explorar sus efectos y ejemplos.
+- La tarjeta de memoria permite desenfocar su texto.
+- La de lectura y escritura activa la alteración de letras.
+- La de distracción activa la mosca.
+- La de tiempo adicional muestra un reloj de cuenta atrás real, con un
+  botón para añadir 30 segundos.
+
+Principios psicopedagógicos
+- Selecciona las opciones 01, 02, 03 y 04 con el ratón o con las teclas
+  1, 2, 3 y 4 mientras estés en esa diapositiva.
+- Explora la comparación de enfoques educativos, la actividad de
+  gamificación, la organización de instrucciones y la tríada inclusiva.
+- El botón del estudio científico muestra su referencia y permite abrir
+  el artículo mediante su enlace.
+
+NOTA
+----
+Los efectos visuales y sonoros son recursos didácticos para apoyar la
+explicación. No representan necesariamente cómo vive el TDAH cada persona.
+Si vas a utilizar el sonido, comprueba antes el volumen de los altavoces.
+
+¡Disfruta de la presentación!

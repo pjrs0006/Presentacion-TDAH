@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#eef1e6">
+  <title>TDAH · Presentación interactiva</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script defer src="cerebro/brain_model_data.js"></script>
+  <script defer src="cerebro/brain_texture_data.js"></script>
+  <script defer src="cerebro/brain3d.js"></script>
+</head>
+<body>
+  <main id="viewport" aria-label="Presentación interactiva sobre el TDAH">
+    <div id="stage" class="stage">
+      <div class="stage-grain" aria-hidden="true"></div>
+      <div class="stage-topbar" aria-hidden="true">
+        <span class="topbar-brand"><span class="brand-pulse" aria-hidden="true"></span><span>Máster Universitario en Profesorado de Educación Secundaria Obligatoria y Bachillerato, Formación Profesional y Enseñanza de Idiomas</span></span>
+        <span class="topbar-right">Aprendizaje y desarrollo de la personalidad</span>
+      </div>
+
+      <!-- 01 — PORTADA -->
+      <section class="slide cover is-active" data-title="Portada" aria-label="Diapositiva 1: portada">
+        <div class="cover-design" aria-hidden="true">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+          <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="orb o4"></div>
+          <svg class="neural-path" viewBox="0 0 600 490" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26 290C107 293 121 202 197 213C278 226 267 334 356 323C435 313 427 235 568 249" stroke="#99AA8C" stroke-width="3" stroke-dasharray="8 12"/><path d="M86 121C140 147 187 107 232 161C291 232 337 159 391 177C435 191 442 147 546 137" stroke="#D3DCCB" stroke-width="3"/><circle cx="196" cy="213" r="9" fill="#799768"/><circle cx="355" cy="323" r="9" fill="#799768"/><circle cx="390" cy="177" r="7" fill="#C4D7B5"/></svg>
+        </div>
+        <div class="cover-left">
+          
+          <div class="cover-heading"><h1>TDAH<span class="title-dot">.</span></h1></div>
+          <p class="cover-lede">Trastorno por déficit de atención e hiperactividad</p>
+          <span class="cover-mini-note"><span class="mini-dot"></span> Presentación web interactiva</span>
+        </div>
+        <aside class="author-pane">
+          <p class="micro-title">REALIZADO POR</p>
+          <ul class="author-list">
+            <li>Francisco Sánchez Fernández</li>
+            <li>Pablo José Redondo Silva</li>
+            <li>Emilia Serrano Romero</li>
+            <li>Elia Torres Conde</li>
+            <li>María Siles Conde</li>
+          </ul>
+          <div class="cover-note">Una mirada educativa<br>sobre la atención y la diversidad.</div>
+        </aside>
+        <span class="slide-ordinal">01 / 14</span>
+      </section>
+
+      <!-- 02 — ÍNDICE -->
+      <section class="slide" data-title="Índice de contenidos" aria-label="Diapositiva 2: índice">
+        <div class="page-heading compact"><h2>Índice de <span class="serif-accent">contenidos</span></h2><p>Cuatro bloques del trabajo</p></div>
+        <div class="agenda-list" aria-label="Índice interactivo">
+          <button type="button" class="agenda-row agenda-link" data-goto-slide="3" aria-label="Ir a Definición del problema">
+            <span class="agenda-no">01</span><span class="agenda-main">Definición del problema.</span><span class="agenda-mark">↗</span>
+          </button>
+          <button type="button" class="agenda-row agenda-link" data-goto-slide="6" aria-label="Ir a Características de los alumnos y alumnas">
+            <span class="agenda-no">02</span><span class="agenda-main">Características de los alumnos/as.</span><span class="agenda-mark">↗</span>
+          </button>
+          <div class="agenda-row agenda-link long" role="link" tabindex="0" data-goto-slide="9" aria-label="Ir a Respuesta educativa">
+            <span class="agenda-no">03</span>
+            <span class="agenda-main">Respuesta educativa:
+              <span class="agenda-sub-list">
+                <button type="button" class="agenda-sub-link" data-goto-slide="10">3.1. Estrategias de tratamiento</button>
+                <button type="button" class="agenda-sub-link" data-goto-slide="11">3.2. Principios psicopedagógicos para atender a la diversidad del alumnado</button>
+              </span>
+            </span><span class="agenda-mark">↗</span>
+          </div>
+          <button type="button" class="agenda-row agenda-link" data-goto-slide="13" aria-label="Ir a Conclusiones">
+            <span class="agenda-no">04</span><span class="agenda-main">Conclusiones.</span><span class="agenda-mark">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 03 — SECCIÓN CONCEPTO -->
+      <section class="slide section-break" data-title="01 · Concepto" aria-label="Diapositiva 3: concepto">
+        <div class="section-line" aria-hidden="true"></div>
+        <div class="section-index">01<span>.</span></div>
+        <div class="section-block"><span class="eyebrow">PRIMER BLOQUE</span><p class="section-script">Concepto:</p><h2>Definición del<br>problema</h2></div>
+        <div class="section-side-word">COMPRENDER</div>
+      </section>
+
+      <!-- 04 — DEFINICIÓN -->
+      <section class="slide slide-definition" data-title="¿Qué es el TDAH?" aria-label="Diapositiva 4: definición">
+        <div class="eyebrow">01 / DEFINICIÓN DEL PROBLEMA</div>
+        <div class="page-heading"><h2>¿Qué es el <span class="serif-accent">TDAH?</span></h2></div>
+        <div class="definition-layout">
+          <div class="definition-left">
+            <div class="paper-card intro-card blur-target">
+              <p>Es el <strong>trastorno por déficit de atención e hiperactividad.</strong> Es un trastorno del neurodesarrollo el cual posee un fuerte componente genético que interactúan con factores ambientales y neurológicos.</p>
+            </div>
+            <h3 class="mini-header">El TDAH afecta a diferentes dominios cognitivos como:</h3>
+            <div class="domain-grid blur-target">
+              <div><span class="domain-symbol">◎</span><span>Atención</span></div>
+              <div><span class="domain-symbol">♡</span><span>Regulación de las emociones</span></div>
+              <div><span class="domain-symbol">↯</span><span>Control de los impulsos</span></div>
+              <div><span class="domain-symbol">⊞</span><span>Funciones ejecutivas</span></div>
+            </div>
+          </div>
+          <div class="brain-panel brain-panel--3d">
+            <div class="panel-title">TDAH Y EL CEREBRO <span class="panel-sup">MODELO ANATÓMICO · 3D</span></div>
+            <div class="brain3d-view" id="brain3d-view" aria-label="Cerebro tridimensional interactivo. Arrastra para girar y utiliza la rueda para acercar.">
+              <canvas id="brain3d-canvas" width="600" height="340" aria-label="Representación anatómica tridimensional de un cerebro humano"></canvas>
+              <img id="brain3d-fallback" src="assets/slide4_img1.png" alt="Ilustración cerebral del documento original" hidden>
+              <div class="brain3d-orbit-label" aria-hidden="true"><span class="orbit-marker"></span> VISTA 3D</div>
+              <div class="brain3d-top-help" aria-hidden="true">↔ Girar &nbsp; · &nbsp; ⊕ Zoom</div>
+              <div class="brain3d-controls">
+                <button id="brain3d-spin" title="Pausar o activar el giro automático" aria-pressed="true" type="button">Ⅱ <span>PAUSAR GIRO</span></button>
+                <button id="brain3d-reset" title="Volver a la vista inicial" type="button">↺ <span>CENTRAR</span></button>
+              </div>
+            </div>
+            <div class="brain3d-info" id="brain3d-info" aria-live="polite"><span>Modelo anatómico aportado; los resaltados y redes son ilustraciones didácticas, no datos diagnósticos.</span></div>
+            <div class="brain-facts brain3d-facts blur-target" role="group" aria-label="Conceptos del PDF sobre el cerebro y el TDAH">
+              <button type="button" data-brain-focus="dopamina" aria-pressed="false">
+                <div class="brain-fact-head"><b>01</b><i>↗</i></div>
+                <span class="brain-fact-label">Menos niveles de dopamina</span>
+              </button>
+              <button type="button" data-brain-focus="prefrontal" aria-pressed="false">
+                <div class="brain-fact-head"><b>02</b><i>↗</i></div>
+                <span class="brain-fact-label">Corteza prefrontal poco desarrollada</span>
+              </button>
+              <button type="button" data-brain-focus="conectividad" aria-pressed="false">
+                <div class="brain-fact-head"><b>03</b><i>↗</i></div>
+                <span class="brain-fact-label">Baja conectividad de redes neuronales</span>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 — ADOLESCENCIA -->
+      <section class="slide" data-title="TDAH en la adolescencia" aria-label="Diapositiva 5: adolescencia">
+        <div class="eyebrow">01 / DEFINICIÓN DEL PROBLEMA</div>
+        <div class="page-heading"><h2>TDAH en la <span class="serif-accent">adolescencia</span></h2></div>
+        <div class="adolescence-layout">
+          <div class="youth-illustration paper-card">
+            <img src="assets/slide5_img1.png" alt="Ilustración del alumnado del PDF original">
+            <div class="image-accent">UNA REALIDAD PRESENTE EN EL AULA</div>
+          </div>
+          <div class="stat-area blur-target">
+            <div class="stat-row">
+              <div class="stat-value">1<span>/</span>20</div>
+              <p>Se estima que en Europa <strong>1 de cada 20 niños o adolescentes en edad escolar</strong> está afectado por este trastorno.</p>
+            </div>
+            <div class="stat-row"><div class="stat-value smaller">2–12<span>%</span></div><p>A nivel mundial se estima que su prevalencia se encuentra <strong>entre el 2% y el 12% de la población pediátrica</strong></p></div>
+            <div class="stat-row"><div class="stat-value">+6<span>%</span></div><p>En España este porcentaje <strong>supera el 6% de TDAH en jóvenes.</strong></p></div>
+            <div class="adolescence-bottom">
+              <div class="small-paper"><strong>50%</strong><p>El 50% de personas diagnosticadas siguen pareciento altos niveles de sintomatologia en las tapas tempranas de la adultez</p></div>
+              <div class="small-paper"><strong>Con la edad</strong><p>En muchos casos los sintomas disminuyen con la edad</p><p class="bold-note">Dificultades asociadas al trastorno para el resto de la vida.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 — SECCIÓN CARACTERÍSTICAS -->
+      <section class="slide section-break" data-title="02 · Características" aria-label="Diapositiva 6: características del alumnado">
+        <div class="section-line" aria-hidden="true"></div>
+        <div class="section-index">02<span>.</span></div>
+        <div class="section-block"><span class="eyebrow">SEGUNDO BLOQUE</span><p class="section-script">Comprender al alumnado:</p><h2>Características de los<br>alumnos/as</h2></div>
+        <div class="section-side-word">OBSERVAR</div>
+      </section>
+
+      
+      <!-- 07 — CARACTERÍSTICAS INTERACTIVAS: introducción y subtipos -->
+      <section class="slide slide-characteristics-dynamic" id="slide-caracteristicas" data-title="Características" aria-label="Diapositiva 7: características del TDAH">
+        <div class="eyebrow">02 / CARACTERÍSTICAS DE LOS ALUMNOS/AS</div>
+        <div class="page-heading char-heading">
+          <h2><span class="serif-accent">Características</span></h2>
+          <aside class="char-reference-badge" aria-label="Cita y referencia bibliográfica">
+            <span class="char-badge-hole" aria-hidden="true"></span>
+            <div class="char-badge-content">
+              <p class="char-badge-quote">«El alumnado con TDAH presenta diferentes características según el subtipo predominante.»</p>
+              <div class="char-badge-footer">
+                <span class="char-badge-citation">“El TDAH en la escuela” - Leonor Fernández Fernández(2021)</span>
+                <a class="char-badge-study-link" href="https://books.google.com.ec/books?id=D1BIEAAAQBAJ&printsec=frontcover#v=onepage&q&f=false" target="_blank" rel="noopener noreferrer" >Consultar libro <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="char-stage-layout">
+          <article class="char-intro paper-card">
+            <h3 class="char-intro-title"><span class="char-intro-square" aria-hidden="true"></span>Introducción</h3>
+            <div class="char-intro-points blur-target">
+              <p><strong>• Manifestación variable</strong></p>
+              <p><strong>• Síntomas principales:</strong></p>
+              <p class="char-subline">1. Déficit de atención.</p>
+              <p class="char-subline">2. Hiperactividad</p>
+              <p class="char-subline">3. Impulsividad</p>
+              <p><strong>• Predominio de síntomas</strong></p>
+              <p><strong>• Subtipos:</strong></p>
+              <p class="char-subline">1. Inatento</p>
+              <p class="char-subline">2. Hiperactivo</p>
+              <p class="char-subline">3. Impulsivo</p>
+              <p><strong>• Características no excluyentes</strong></p>
+            </div>
+            <div class="char-button-group" role="group" aria-label="Seleccionar características predominantes">
+              <button type="button" class="char-subtype-btn" data-char-panel="0" aria-pressed="false">INATENCIÓN <span>↗</span></button>
+              <button type="button" class="char-subtype-btn" data-char-panel="1" aria-pressed="false">HIPERACTIVIDAD <span>↗</span></button>
+              <button type="button" class="char-subtype-btn" data-char-panel="2" aria-pressed="false">IMPULSIVIDAD <span>↗</span></button>
+            </div>
+          </article>
+          <div class="char-display paper-card" aria-live="polite">
+            <figure class="char-main-picture" id="char-main-picture">
+              <img src="data:image/webp;base64,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" alt="Ilustración del niño sosteniendo una maraña de líneas" />
+            </figure>
+            <article class="char-topic-panel" data-char-content="0" hidden>
+              <header class="char-topic-title"><h3>INATENCIÓN</h3><img src="data:image/png;base64,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" alt="Ilustración que acompaña a la inatención"></header>
+              <ul class="char-info-list blur-target">
+                <li>Dificultad para atender a los detalles de las tareas escolares y cotidianas.</li>
+                <li>Errores por descuido.</li>
+                <li>Dificultad para mantener la atención, especialmente en tareas monótonas o que requieren esfuerzo mental.</li>
+                <li>Parecen no escuchar.</li>
+                <li>Descuidados y olvidadizos</li>
+                <li>Dificultad para atender a varios estímulos.</li>
+              </ul>
+            </article>
+            <article class="char-topic-panel" data-char-content="1" hidden>
+              <header class="char-topic-title"><h3>HIPERACTIVIDAD</h3></header>
+              <ul class="char-info-list blur-target">
+                <li>Excesiva actividad motórica.</li>
+                <li>Excesiva actividad verbal.</li>
+                <li>Expresión emocional de mayor intensidad.</li>
+              </ul>
+              <figure class="char-topic-visual">
+                <img src="./assets/hiperactividad.png">
+               </figure>
+            </article>
+            <article class="char-topic-panel" data-char-content="2" hidden>
+              <header class="char-topic-title"><h3>IMPULSIVIDAD</h3></header>
+              <ul class="char-info-list blur-target">
+                <li>Dificultad para controlar e inhibir conductas.</li>
+                <li>Dificultad en la regulación emocional.</li>
+              </ul>
+              <figure class="char-topic-visual">
+                <img src="./assets/impulsividad.PNG" alt="Ilustración de la impulsividad">
+              </figure>
+            </article>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 08 — LÍNEA TEMPORAL DEL DOCUMENTO ACTUALIZADO -->
+      <section class="slide slide-characteristics-timeline" data-title="Características · línea temporal" aria-label="Diapositiva 8: línea temporal de las características">
+        <div class="eyebrow">02 / CARACTERÍSTICAS DE LOS ALUMNOS/AS</div>
+        <div class="page-heading char-heading"><h2><span class="serif-accent">Características</span></h2></div>
+        <div class="char-timeline-art" aria-label="Línea temporal con impulsividad de los 3-4 años, hiperactividad a partir de los 3 y déficit de atención alrededor de los 5-7">
+          <div class="char-time-line" aria-hidden="true"></div>
+          <div class="char-time-items">
+            <article class="char-time-item">
+              <div class="char-time-age"><span>3-4</span></div>
+              <span class="char-time-dot" aria-hidden="true"></span>
+              <div class="char-time-caption"><h3>IMPULSIVIDAD</h3><p>Se manifiesta entre los 3-4 años. Mejora con el tiempo.</p></div>
+            </article>
+            <article class="char-time-item">
+              <div class="char-time-age"><span>3+</span></div>
+              <span class="char-time-dot" aria-hidden="true"></span>
+              <div class="char-time-caption"><h3>HIPERACTIVIDAD</h3><p>Puede identificarse a partir de los 3 años. Se atenúa con el tiempo.</p></div>
+            </article>
+            <article class="char-time-item">
+              <div class="char-time-age"><span>5-7</span></div>
+              <span class="char-time-dot" aria-hidden="true"></span>
+              <div class="char-time-caption"><h3>DÉFICIT DE ATENCIÓN</h3><p>Aparece entorno a los 5-7 años. En la etapa escolar su repercusión es mayor.</p></div>
+            </article>
+          </div>
+        </div>
+        <img class="char-time-silhouettes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOYAAAC8CAIAAADjHUV9AAATrElEQVR4nO3dZ1gU1xoH8JktsCodUZqAFRMDFuyFYI2xl6jRqImxoNcYeyQGo9Hc5Epigi3G2KOiaGJDNCBioYiNIkoTF5C6sMDC7rqwsztzP3ifPPcxRndnz87s2by/T/mwc95j+D+zs2dOIRm9hgAAB7e2Tfv25mAB390AwDgQWYAZEh4MAF7gLgswA5EFmIHIAsxAZAFmILIAMxBZgBmILMAMRBZgBiILMAORBZiByALMQGQBZiCyADMQWYAZiCzADEQWYAYiCzADkQWYEfHdAfByWq1WKi16+rRUVl2tVCqbm7UCgcDW1sbFxcW9bdv27f08PT2EQiHf3eQBRNayMAxTVlZ+MfZSXHxCWVl5TU2NQtGg0WgoihIIBGKxyM7O3tnZqW3bNl27+o8bO2b4sBB7e3u+e80pWK5oQSiK2hqx7ee9+2pqarRa6tUfFggENjY2/v5dNm0MHztmtFgs5qaTvIPIWgSVSpWQkPhZ2BePHxcae61IJJoyZVL4+nX+/v42NtYfXIgs/6qqqiJ37D5w4LBcLmfdiJ+f7xfr102fNtXBwQFh3ywQRJZncrl8YejSuLgrGo2pfwi31q1XrFi2csWyFi1aIOmbZYLI8kmpVI4ZOykl9RbDMEgaFAqFEVu/WbXyUyStWSYYl+VNfb1ixcq1t9Juo8orQRB6vf6zdeuPR53U6XSo2rQ0EFl+aLXUyehT585d0Ov1aFvW6/Xr13+ZmpqGtlnLAZHlR3l5+c5de+rq683ReFl5+U979lbX1Jijcd5BZPkRuX1nbm6emRqnafrSpT+Sk1LM1D6/ILI8KC4uOXT4V7OWUKpUJ06eUqlUZq3CC4gsD3bt/lmpNHuY4q8kFBUVm7sK9yCyXKurqz9/IYaDQo2NylOnz3BQiGMQWa6lZ2TU1tZyU+vsufPcFOISRJZrWVnZGk0TN7VycnIrK6u4qcUZiCynGIYpLi6mqNfM0kJY7lFODje1OAOR5RRFUfLaWuSvD16hpOQpZ7W4AZHlVHOztrlJy2VFhaKBy3IcgMhyimEYhDMKDKG3uskGEFlO2diIOZ6FbW9102chspyytbV1dHQkSZKzil5enpzV4gZEllMkSbZr583ZOi2SJLt29eemFmcgslzr1u1NiUTCTS0PD/cO7f24qcUZiCzX+vQOsre346bW2DGjRSJrW/cPkeWal5dn8JDBHBQiSXLO7A84KMQxiCzXBALB4tCFHNz8+vXrExDQzdxVuAeR5cGQIYNGvzPKrCVatGgx+4NZdnYcPYFwCSLLA5Ikw9atcXd3N1+JPr2DRr8z0voeZAmILF96BfWc99EcM+0D5+DgsHDhx+2tbqzgOYgsP1pIJAvmzwsJCUb+WkEoFM6YPnXm+9MFAuv841rnvwoLHTq03/TlF93efANhm2KxeMb0977/bqsV7+Np5bvFUBSVlfXgUU5uWVm5Wq0WCoVOTk5+fr49uge2b+9nCfeh1Ftpy1esuXfvvulN2djYzJj+3rffbLG+l7T/z2ojW1+vOHrs+J6f91XLqpu1WoqiGIYmCFIoFIjF4hYtWgQF9Vq14tOQkGDef6Pk5xcsXrLsxs0kUyZ5icXi+R9/9NWmDW5urbmcw8A9K4ysSqX+Iy5+48bNOa/bKEAgEIwbN+brLZv8u3S2sbHhpnsvVVFRuXHTlrPnLrBYFiYWi93d265dvfJf/wq14ueBP1lbZAufPIncvuvggcOaJkPXV3l4eGwID5v5/nQnJydzdu01tFrtxdjLx4+fSE1Nk1VXG3LHFQjITp06vTNqxIL58wIDAzjopCWwqsjm5eWHfR5+ISbW2G9YV1eXFcuXrV61nPdtLuXy2vvp6YmJ1/+Ii8/Jyfu73eAcHR169w4aO+bdQYMGdHvzjVatWnHcTx5ZT2Tl8trlK1ZHnzqt19MsLpdIJD/t3j7vo7nIO2YshmEoimpqaq6qqkq9lfbgQfbT0jJlY6NAKHR1cenYsUPPnj16B/V0dnaWSCT/hCeBF1hPZCO371qzNsyUlYCtWrVMvBrXt09vhL0CyFlJZHPz8ocNH11VZeqa/bffHvLbqROtW7si6RUwB/4HJpHYuHGz6XklCCI9PSPmYqzp7QDzsYZpEzm5eZcuxyFpSqlUXb4cN2XyJEdH3lb5MQxTVFScnpGZlfXg4cNHVVWyRqWysbFRJBLZ2dk5Ozv5+vgEBgZ07x7Qv19fqz/M46+sIbJxcfHNzc2oWsvNy38ilfbq2QNVg6/FMMyzZ8+qZNVZmVnxVxKuXb/55In0FQ/lSUQKcfwEQRBisbhP76ChQ0NGjRzu5+fbpo0bZ0t0eIT9syxN03M/mh8VFY1qfwBHB4ejRw+NHzcGSWuvpVAoEhOvX7+RdDMpOTv7IU2zG+6wDQoKGhoSPGrkiH79+vD7WsTcsL/LNjYqqyplCPezaFQqKysraZo29wwElUp14ULsocNHHmQ/qqmpMeWf0NTUnJKSeufO3agT0QMHDlgSunDgwP4Iu2pRsI+sSqXSNKH8omAYpr5eYe7IVlRULFu+OiYmFuGWchRFSaVFRUXFZ8+eW7RoQfj6dS4uLqgatxzYjxjo9Xp2X6avQFGU+bYhqpHLd+7aE9ijz5kz58yxBSLDMGr1s8jInWPHTU5ISORsY1DOYB9ZiURiI0b86GZnZ2eOWyxN05mZWWvXfr72s89ra+uQt///GIZJu33n/VlzIr7bVl5RYdZaHMM+sk7OTvYOKE93F4lEbdq4mSOyGZlZC0OXRp2IRji+8Wq1tXVbI7atWRNmTYcmYB9ZWxubLp07I0yYu3tbDw935FNO027fCRk66t69+5zth/ycRqM5GX16/oLFDQ2NXNY1H+wjSxDE0JBghLtcderY0c/XF1VrBEFQFBVzMXby5Ok8Hml07fqN8ROmSK3iXmsNkX377SGoVpOKxeJ+/fp4e3shaY0gCJqmk5JTwsM3yaqrUbXJTlJyyvLlqwsLn/DbDdNZQ2QdHBzC1q1B0pSrq8uM6e8hvGdXVFSuWRP28FEOxzshv1Rc/JWtEdvkco7OwzETa4gsQRAfzp09dOjbJjZCkuTH8z7sie5VrU6nW7hoSUZmFvJhOHYoijry67Hffz9rIf1hx0oiSxDEf77Z0rlzJ9aXCwSCkSOGrf/8M1T90Wq1X//7P3/EXUHVIBIURW38akt6RibfHWHPeiLbvXv3DV+EeXp6sLiWJMngIYMjf/we4YqUmzeTf9l3EFVrCMlk1Z9+uqq+XsF3R1iynsja2tpMmzb1h++3Ghs7kiSDgwf/8EOEv38XVJ2prq7ef+CQTCZD1SBaabfv/LRnL9+9YMkskaVprs9deU4ikcyYMe3+vdTAwABDfkKRJCmRSKZMmfTbqRM9e3RHNbjLMExqatrF2MsW+8jIMMyRX49lZz/kuyNsIJsWwzCMvLa2SFpUI6+VyarFYpGjo6OHu7uPT7s2bdy43AzCv0uXhPjY/QcOxVy8lJdXUF9f/9fPCAQCLy/P7t0D58754L2pk9F2r6m5+civx9RqNcI2kXv6tPTM2fP+/l2wm6mIZr7sM40mOvr0xYuXsrKyy8rLn7+QlEhs23l7vxXw1vhxYyZNHO/s7Gx6IcPRNC0tKk5Pz8jOfljwuLCqqkrZqBSJRE5OTl7enm91ezMgICCoVw9XV/TLvG7cSBo7fpJa/Qx5y2j17dv76K+Hupjwm5UXCCJbXFzyybKVySmpDQ0vOciPJEkHB/t3Ro38afcOV1ce5sJptVqVSt3c3KzT6UiSFIvFEonEzq6V+ZZTT5g4NebiJTM1jpBYLD5yaP/MmdP57ohxTI1s4RNp6OKl167deO3D65tvdE28Gte2bRtTyhlFr9dTFEXpdHqdnqZpmqFJghQIBEKhUCQSikQisViM/ImlpORph05vWOxT7AumTZsafeIoXnt4mfQsq1SqIiK23bh+05AfWzm5eUuWfrp3zy43t9amFH0thmGePi19IpXm5eVnZz96XFhYUVFZX1+vVKpEIqGLs4uHp7uXp2fnzp16dA9s36G9n69P69bIunQ86iQueSUIIj4+QS6Xu7m58d0RI5gU2YSrV6NOROsN/gslJl77/czZhQs+NtOXsk6nS0/POHvuwp2793Jz82Sy6r+mp6Ghsai4+Pl/t2zZ0tfXp6t/l5CQ4AkTxvn6+Jh4v9FqtVevJprSAscaGhouXY77cO5svjtiBPYPBgzD9O47KD09w6irxo19d+/Pu9kN+L9aaWnZ1//+NvZSnEwm+7utrF6KJImWLVt6e3uHLpr/ydIlpkwwyM3LnzjxvceFhaxb4N7ECePPnT3Fdy+MwH4k8sGDbGPzShBE2u27T5+Wsi76UiqVKupEdFCfAb/sO1heXm5UXgmCYBhCrX6Wn1+wavW6fgOCU1JStVqW58/nPMqpVyjYXcuX+CsJTQbvEmkJ2Ef2xs1kFlfJ5fLikhLWRV9A03ROTu6y5avmfji/pkZueoMZGZnvz5q7a/eel45+vFZxSQmPk2LZ0Wg0UmkR370wAvvIlrBNXmlpGeuiL0hPz/xk2cqoqJOm7B73grKy8q82f7NmbZixy7N0Ol1lZRVni2QQwiuy7H9+sf42QfUuNz+/YMbM2cXFJch/oTc2Nh4+cqxKVn344D7Dx5JVarVMZtBWxpbmCVaRZX+X9fHxYXEVSZLOzk6si/6poODx6DETpNIiM40o6XS6uLgrX4R/+dL3vS/V3NSkxO2p4Lm6OvMu90WLfWT79AlicZW9vX1Xf3/WRZ8rL69YH74R+c+4F1AUdTwqet/+Qwb+nqN0OhyfCgiCUKksejrEC9hHtl/fvh07tDf2qu6BASaurNJoNAcOHo6Li+dgxF6lUv0YuePGzSRDPqyjcI2shc/geQH7yLZq1XLVqhVGXWJjYzNq1Agfn3asixIEkZOTu33HLs5uDFVVskWhSw0pR9O0XofsVyCXOF6nbiKTZojOmjl92LAQw6eZ9urVY+b700159aXVasPWb6irM/T5EgmptGhrxPcIByWAKUyKrIOD48YvvwgMeMuQ95xdunTesnljx44dTKkYG3s5MfG6KS2wczL6dF5ePvd1wV+ZFFmBgBw4oP/2yG0D+vd79ceCgwcfObR/+LChppRTq59FfPcDL5NOysrKz1+4CDdaS2Dq0hGRSDRkyKDLly5s/urLl07RcnBw2BC+/nR0VP/+fU2cdJKcnJKXz8+trqmpKSkppbISwXEMwEQIFtI8n8S9IfzzBfPnJVxNTE5OraioIAjSu51XUK+ekyaORzK1j6bphKuJPA7HZGRmSqVFCDeSAeyg3BLZw8N9zuxZc2bPQtjmn2pq5NkPHxk75QWh6urq7IePBg8eaAnni/+ToVyuWK9QFBQ8lj6Rqp9pdBTl4uLs7e3dtas/kvUzpaWlCCcnsMAwRNrtO6GL5kNk+YUgshRFJSQkHjh4+Gri9aYmzf/O42QYUkCSpKBlyxZDBg9asiT0nVEjTHmWraqS8b4twKNHOXqaxn6vfsyZ9P+/rr7+6tVrP/64487du393cmxzc/OFmNgLMbFBQT1XrVw+auRwV1dXFtmtratTKNhMCESouLiYhkEDvrH8jmMY5s7deytXrp338cJbabcNOen4/v2M0NCly1esYTExXKfX19bW8T7GpFA04PVu0yqxiSzDMHHxV0IXf3L0WJRRq/VVanX0qd/mzQ9NvHbdqIq0nraErDAMo2A19RsgxCayyckpS5cuz8zMYjE3VK/XZ2c/HP3u+OvXbxp+FcPQWq1FvAdXYzXpySoZHdni4pJ1YeEmbmFOUbpPlq24dy/dmNBbxNRpGsMZ3FbGuMg2NzeHrd9wK+226YXz8gsid+yU1+K9ozTgnnGRPf3bmTNnziIprNfrz5+/eO3aDSStgX8OIyKrUCgiIrZRFLL3TyqVKjJyJ6rWwD+EEZG9kpBYUVmJtnza7Ts3k9gsLgf/WIZGtqmpKTk5BflgPsMwe3/Zj7ZNYN0MjaxMVl3wuNAcg/lxf1zRaFAe9Q2sm6GRrZLJzLSitVGpLHwiNUfLwCoZGlm1Wt1onkNQGYYp43WKFsCLEc+yz56Zayf1RqXSTC0D62NoZPU6PWWe6dUMw+jQDZwBq2cRs5UZy3gZC7BgEZEFwHAQWYAZiCzADEQWYAYiCzADkQWYgcgCzEBkAWYgsgAzEFmAGYgswAxEFmAGIgswA5EFmIHIAsxAZAFmILIAM7hEljTxNBtUXtMNi+ijlTM0svb29khO+H5JDwRkO2/vV39GJBK2aePG+yEFtra23l5/eyJNq1atXJyduewPKl5ennx3wQiGbjwfFNRzy+aNMTGxWqTnnYqEwhHDhwUHD371x4RC4dQpk2pq5A8eZPO1Xaatjc3kSRNcXP42lG3btvls7WpnZ+darM6K9/P1XRy6kO9eGIFk9LBTC8AJLs+yAPwPRBZgBiILMAORBZiByALMiGga9sMCOBFVygr47gMARhA9zI3nuw8AGAGeZQFmILIAMxBZgBmILMAMRBZgBiILMAORBZiByALMQGQBZiCyADMQWYAZiCzADEQWYAYiCzADkQWYgcgCzEBkAWYgsgAzEFmAGYgswAxEFmAGIgswA5EFmIHIAsxAZAFmILIAMxBZgBmILMAMRBZgBiILMAORBZiByALMQGQBZiCyADMQWYAZiCzADEQWYAYiCzADkQWYgcgCzPwX6rvrneIzGxEAAAAASUVORK5CYII=" alt="Ilustración original de siluetas que representan diferentes edades" />
+      </section>
+
+      <!-- 10 — SECCIÓN RESPUESTA EDUCATIVA -->
+      <section class="slide section-break" data-title="03 · Respuesta educativa" aria-label="Diapositiva 10: respuesta educativa">
+        <div class="section-line" aria-hidden="true"></div>
+        <div class="section-index">03<span>.</span></div>
+        <div class="section-block"><span class="eyebrow">TERCER BLOQUE</span><p class="section-script">Del conocimiento a la práctica:</p><h2>Respuesta<br>educativa</h2></div>
+        <div class="section-side-word">ACOMPAÑAR</div>
+      </section>
+
+      <!-- 11 — ESTRATEGIAS -->
+      <section class="slide" data-title="Estrategias de tratamiento" aria-label="Diapositiva 11: estrategias de tratamiento">
+        <div class="eyebrow">03 / RESPUESTA EDUCATIVA</div>
+        <div class="page-heading"><h2>Estrategias de <span class="serif-accent">tratamiento</span></h2></div>
+        <div class="strategies-grid" id="strategies-grid">
+          <button class="strategy-card" data-strategy="0"><img src="assets/slide11_img1.png" alt="Ilustración original de cerebro y signo de interrogación"><strong>Dificultad para memorizar o recordar</strong><span class="strategy-bottom">↗</span></button>
+          <button class="strategy-card" data-strategy="1"><img src="assets/slide11_img4.png" alt="Ilustración original de cerebro junto a una libreta"><strong>Errores en la lectura o escritura</strong><span class="strategy-bottom">↗</span></button>
+          <button class="strategy-card" data-strategy="2"><span class="strategy-clock-shell" aria-label="Reloj en tiempo real">
+              <svg class="strategy-clock" viewBox="0 0 120 120" aria-hidden="true">
+                <circle class="strategy-clock-face" cx="60" cy="60" r="51" />
+                <circle cx="60" cy="60" r="40" fill="none" stroke="#d4e1cf" stroke-width="1" />
+                <g class="strategy-clock-ticks" stroke="#718e6a" stroke-width="2.4" stroke-linecap="round">
+                  <path d="M60 13V20 M60 100V107 M13 60H20 M100 60H107" />
+                </g>
+                <line x1="60" y1="60" x2="60" y2="35" stroke="#395641" stroke-width="5" stroke-linecap="round" />
+                <line x1="60" y1="60" x2="86" y2="60" stroke="#395641" stroke-width="4" stroke-linecap="round" />
+                <line class="strategy-clock-second" x1="60" y1="60" x2="60" y2="22" stroke="#b16e45" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="60" cy="60" r="5" fill="#537452" />
+              </svg>
+              <span class="strategy-clock-digital" id="strategy-clock-display" aria-live="off">01:00</span>
+              <span class="strategy-clock-extend" id="strategy-clock-extend" role="button" tabindex="0" aria-label="Añadir treinta segundos al reloj">+30 s</span>
+            </span><strong>Requerimiento de más tiempo que el resto</strong><span class="strategy-bottom">↗</span></button>
+          <button class="strategy-card special" data-strategy="3"><img src="assets/slide11_img2.png" alt="Ilustración original sobre distracciones"><strong>Distracción a causa de estímulos externos</strong></button>
+          <button class="strategy-card" data-strategy="4"><img src="assets/slide11_img3.png" alt="Ilustración original de cerebro ante una diana"><strong>Focalización de la atención durante un periodo prolongado</strong><span class="strategy-bottom">↗</span></button>
+          <button class="strategy-card" data-strategy="5"><img src="assets/slide11_img6.png" alt="Ilustración original de bandera roja"><strong>Conductas inadecuadas</strong><span class="strategy-bottom">↗</span></button>
+        </div>
+      </section>
+
+      <!-- 12 — PRINCIPIOS PSICOPEDAGÓGICOS -->
+      <section class="slide slide-principios" id="slide-principios" data-title="Principios psicopedagógicos" aria-label="Diapositiva 12: principios psicopedagógicos">
+        
+        <!-- Barra superior: eyebrow + botón de estudio científico -->
+        <div class="pp-header-bar">
+          <div class="eyebrow">03 / RESPUESTA EDUCATIVA</div>
+          <button class="pp-study-btn" id="pp-study-btn" type="button" aria-haspopup="dialog" title="Consultar estudio científico en Ciencia Latina (2026)">
+            <span class="pp-study-icon">📖</span>
+            <span>Consultar estudio</span>
+          </button>
+        </div>
+
+        <!-- Encabezado de la diapositiva -->
+        <div class="page-heading pp-heading">
+          <h2>Principios <span class="serif-accent">psicopedagógicos</span></h2>
+          
+        </div>
+
+        <!-- Layout dinámico: Selector | Panel interactivo central | Fotografía -->
+        <div class="pp-layout is-mode-0" id="pp-layout">
+
+          <!-- 1. SELECTOR VERTICAL (COLUMNA IZQUIERDA) -->
+          <nav class="pp-selector" aria-label="Menú de principios psicopedagógicos">
+            <button class="pp-nav-btn is-active" data-pp="0" aria-pressed="true" type="button">
+              <div class="pp-nav-num-wrap">
+                <span class="pp-nav-num">01</span>
+              </div>
+              <span class="pp-nav-label">Enfoque<br>constructivista</span>
+              <span class="pp-nav-arr">›</span>
+            </button>
+            <button class="pp-nav-btn" data-pp="1" aria-pressed="false" type="button">
+              <div class="pp-nav-num-wrap">
+                <span class="pp-nav-num">02</span>
+              </div>
+              <span class="pp-nav-label">Gamificación<br>y lo lúdico</span>
+              <span class="pp-nav-arr">›</span>
+            </button>
+            <button class="pp-nav-btn" data-pp="2" aria-pressed="false" type="button">
+              <div class="pp-nav-num-wrap">
+                <span class="pp-nav-num">03</span>
+              </div>
+              <span class="pp-nav-label">Apoyos<br>visuales</span>
+              <span class="pp-nav-arr">›</span>
+            </button>
+            <button class="pp-nav-btn" data-pp="3" aria-pressed="false" type="button">
+              <div class="pp-nav-num-wrap">
+                <span class="pp-nav-num">04</span>
+              </div>
+              <span class="pp-nav-label">Tríada<br>inclusiva</span>
+              <span class="pp-nav-arr">›</span>
+            </button>
+          </nav>
+
+          <!-- 2. ZONA CENTRAL: ANIMACIÓN E INTERACTIVIDAD -->
+          <div class="pp-anim-zone">
+
+            <!-- Panel 0 — Enfoque constructivista: SOLO LAS 2 IMÁGENES DIRECTAS -->
+            <div class="pp-panel is-active" id="pp-panel-0" aria-label="Comparativa directa: escucha pasiva vs proyectos y maquetas">
+              <div class="pp-panel-title">
+                <span>1. El paso a un Enfoque Constructivista</span>
+              </div>
+              <div class="pp-two-images-grid">
+                <!-- Imagen 1: Escucha pasiva -->
+                <div class="pp-compare-card warning">
+                  <div class="pp-compare-img-wrap">
+                    <img src="assets/slide12_pasiva.jpg" alt="Alumnado en aula tradicional con escucha pasiva frente a la pizarra">
+                  </div>
+                  <div class="pp-compare-caption warning">
+                    <div class="pp-compare-title">❌ 1. Escucha pasiva (Aula tradicional)</div>
+                    <div class="pp-compare-desc">Alumnado desconectado, sobrecarga de memoria de trabajo y fatiga ejecutiva sin manipulación.</div>
+                  </div>
+                </div>
+                <!-- Imagen 2: Proyectos y maquetas -->
+                <div class="pp-compare-card success">
+                  <div class="pp-compare-img-wrap">
+                    <img src="assets/slide12_constructivista.jpg" alt="Alumnado en aula constructivista construyendo proyectos y maquetas activas">
+                  </div>
+                  <div class="pp-compare-caption success">
+                    <div class="pp-compare-title">✨ 2. Proyectos y maquetas (Aula constructivista)</div>
+                    <div class="pp-compare-desc">Aprendizaje activo mediante maquetas tangibles: 100% de foco sostenido y canalización motora positiva.</div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /pp-panel-0 -->
+
+            <!-- Panel 1 — Gamificación y lo lúdico (solo lo del medio) -->
+            <div class="pp-panel" id="pp-panel-1" aria-label="Demostración de gamificación educativa">
+              <div class="pp-panel-title">
+                <span>2. La Gamificación y lo Lúdico como Motor</span>
+            
+              </div>
+              <div class="pp-anim-stage pp-game-stage-clean" id="pp-game-stage">
+                <div class="pp-game-ui">
+                  <div class="pp-game-mission">
+                    <span class="pp-game-badge">MISIÓN EDUCATIVA</span>
+                    <span class="pp-game-mission-text">Desafío cooperativo de autorregulación y foco</span>
+                  </div>
+                  <div class="pp-game-retos">
+                    <div class="pp-reto" id="reto-0">
+                      <span class="pp-reto-icon" id="reto-icon-0">○</span>
+                      <span class="pp-reto-label"><span>📖</span> Lectura activa por parejas</span>
+                      <span class="pp-reto-xp">+20 XP</span>
+                    </div>
+                    <div class="pp-reto" id="reto-1">
+                      <span class="pp-reto-icon" id="reto-icon-1">○</span>
+                      <span class="pp-reto-label"><span>💬</span> Debate y contrastación en equipo</span>
+                      <span class="pp-reto-xp">+30 XP</span>
+                    </div>
+                    <div class="pp-reto" id="reto-2">
+                      <span class="pp-reto-icon" id="reto-icon-2">○</span>
+                      <span class="pp-reto-label"><span>💡</span> Resolución creativa del caso</span>
+                      <span class="pp-reto-xp">+50 XP</span>
+                    </div>
+                  </div>
+                  <div class="pp-game-progress-wrap">
+                    <div class="pp-game-progress-label">
+                      <span>Nivel alcanzado: <b id="pp-game-level">1</b></span>
+                      <span id="pp-game-xp-label">0 / 100 XP</span>
+                    </div>
+                    <div class="pp-game-bar-track">
+                      <div class="pp-game-bar-fill" id="pp-game-bar" style="width:0%"></div>
+                    </div>
+                  </div>
+                  <div class="pp-game-reward" id="pp-game-reward" style="display:none">
+                    <span>🏆</span> <span id="pp-reward-text">¡Reto completado!</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pp-panel-controls">
+                <button class="pp-ctrl-btn" id="btn-game-advance" type="button">▶ Superar reto</button>
+                <button class="pp-ctrl-btn secondary" id="btn-game-reset" type="button">↺ Reiniciar misión</button>
+              </div>
+            </div><!-- /pp-panel-1 -->
+
+            <!-- Panel 2 — Apoyos visuales (solo lo del medio, sin botón de ver original) -->
+            <div class="pp-panel" id="pp-panel-2" aria-label="Transformación de instrucción extensa en pasos visuales">
+              <div class="pp-panel-title">
+                <span>3. Implantación de Apoyos Visuales</span>
+              
+              </div>
+              <div class="pp-anim-stage pp-visual-stage-clean" id="pp-visual-stage">
+                <div class="pp-visual-ui" id="pp-visual-ui">
+                  <!-- Estado original: texto denso -->
+                  <div class="pp-visual-before" id="pp-vis-before">
+                    <div class="pp-visual-badge warning">⚠️ Antes · Instrucción en bloque no estructurada</div>
+                    <div class="pp-vis-text-box">
+                      <p class="pp-vis-text">«Lee con calma todo el enunciado de la actividad, identifica y subraya las ideas principales y los datos relevantes, luego resuelve la tarea redactando tus conclusiones con claridad y finalmente revisa el resultado antes de entregarlo.»</p>
+                      <div class="pp-vis-footnote">Para el alumnado con TDAH, esta instrucción en bloque satura la memoria de trabajo y provoca desorientación y abandono.</div>
+                    </div>
+                  </div>
+                  <!-- Estado transformado: pasos visuales -->
+                  <div class="pp-visual-after" id="pp-vis-after" style="display:none">
+                    <div class="pp-visual-badge success">✨ Después · Secuenciación estructurada con pictogramas</div>
+                    <div class="pp-vis-steps">
+                      <div class="pp-vis-step">
+                        <span class="pp-vis-num">01</span>
+                        <span class="pp-vis-step-icon">📖</span>
+                        <div class="pp-vis-step-body">
+                          <span class="pp-vis-step-title">Leer la actividad</span>
+                          <span class="pp-vis-step-sub">Lectura guiada del enunciado</span>
+                        </div>
+                      </div>
+                      <div class="pp-vis-step">
+                        <span class="pp-vis-num">02</span>
+                        <span class="pp-vis-step-icon">🖍️</span>
+                        <div class="pp-vis-step-body">
+                          <span class="pp-vis-step-title">Identificar ideas principales</span>
+                          <span class="pp-vis-step-sub">Subrayado y selección de datos clave</span>
+                        </div>
+                      </div>
+                      <div class="pp-vis-step">
+                        <span class="pp-vis-num">03</span>
+                        <span class="pp-vis-step-icon">🧩</span>
+                        <div class="pp-vis-step-body">
+                          <span class="pp-vis-step-title">Resolver la tarea</span>
+                          <span class="pp-vis-step-sub">Desarrollo práctico paso a paso</span>
+                        </div>
+                      </div>
+                      <div class="pp-vis-step">
+                        <span class="pp-vis-num">04</span>
+                        <span class="pp-vis-step-icon">🔍</span>
+                        <div class="pp-vis-step-body">
+                          <span class="pp-vis-step-title">Revisar el resultado</span>
+                          <span class="pp-vis-step-sub">Autocomprobación final y entrega</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pp-panel-controls">
+                <button class="pp-ctrl-btn" id="btn-vis-toggle" type="button">↔ Transformar a visual</button>
+              </div>
+            </div><!-- /pp-panel-2 -->
+
+            <!-- Panel 3 — Tríada inclusiva (solo la animación, sin botones) -->
+            <div class="pp-panel" id="pp-panel-3" aria-label="Diagrama interactivo de la tríada inclusiva">
+              <div class="pp-panel-title">
+                <span>4. La «Tríada» Inclusiva — Enfoque Sistémico</span>
+              
+              </div>
+              <div class="pp-anim-stage pp-triad-stage-clean" id="pp-triad-stage">
+                <svg id="pp-triad-svg" viewBox="0 0 460 304" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Triángulo sistémico entre Alumnado, Familia y Centro">
+                  <!-- Líneas animadas de sinergia continua -->
+                  <line id="tri-line-ab" x1="230" y1="52" x2="95" y2="205" stroke="#6a9b6e" stroke-width="3" stroke-dasharray="8 6"/>
+                  <line id="tri-line-bc" x1="95" y1="205" x2="365" y2="205" stroke="#6a9b6e" stroke-width="3" stroke-dasharray="8 6"/>
+                  <line id="tri-line-ca" x1="365" y1="205" x2="230" y2="52" stroke="#6a9b6e" stroke-width="3" stroke-dasharray="8 6"/>
+
+                  <!-- Núcleo central de coordinación -->
+                  <circle cx="230" cy="154" r="26" fill="#eaf4e6" stroke="#7aa876" stroke-width="2.5"/>
+                  <text x="230" y="162" text-anchor="middle" font-size="22">💚</text>
+                  <text x="230" y="192" text-anchor="middle" font-size="13" font-weight="900" fill="#2d4e35">SINERGIA SISTÉMICA</text>
+
+                  <!-- Nodo 0: Alumnado -->
+                  <g id="tri-node-0" class="tri-node active" data-triad="0">
+                    <circle cx="230" cy="52" r="40" fill="#c8e0bc" stroke="#2d4e35" stroke-width="3.5"/>
+                    <text x="230" y="64" text-anchor="middle" font-size="36">🧑‍🎓</text>
+                    <rect x="155" y="98" width="150" height="26" rx="7" fill="#ffffff" stroke="#9bbd90" stroke-width="1.8"/>
+                    <text x="230" y="116" text-anchor="middle" font-size="13.5" font-weight="900" fill="#2d4e35">ALUMNADO</text>
+                  </g>
+
+                  <!-- Nodo 1: Familia -->
+                  <g id="tri-node-1" class="tri-node" data-triad="1">
+                    <circle cx="95" cy="205" r="40" fill="#ddecd6" stroke="#7aa876" stroke-width="2.5"/>
+                    <text x="95" y="217" text-anchor="middle" font-size="36">👨‍👩‍👧</text>
+                    <rect x="35" y="252" width="120" height="26" rx="7" fill="#ffffff" stroke="#9bbd90" stroke-width="1.8"/>
+                    <text x="95" y="270" text-anchor="middle" font-size="13.5" font-weight="900" fill="#2d4e35">FAMILIA</text>
+                  </g>
+
+                  <!-- Nodo 2: Centro -->
+                  <g id="tri-node-2" class="tri-node" data-triad="2">
+                    <circle cx="365" cy="205" r="40" fill="#ddecd6" stroke="#7aa876" stroke-width="2.5"/>
+                    <text x="365" y="217" text-anchor="middle" font-size="36">🏫</text>
+                    <rect x="280" y="252" width="170" height="26" rx="7" fill="#ffffff" stroke="#9bbd90" stroke-width="1.8"/>
+                    <text x="365" y="270" text-anchor="middle" font-size="13.5" font-weight="900" fill="#2d4e35">CENTRO EDUCATIVO</text>
+                  </g>
+                </svg>
+              </div>
+            </div><!-- /pp-panel-3 -->
+
+          </div><!-- /pp-anim-zone -->
+
+          <!-- 3. ZONA DERECHA: FOTOGRAFÍA (PARA 02, 03, 04) -->
+          <div class="pp-photo-zone" id="pp-photo-zone">
+            <div class="pp-photo-card">
+              <!-- Foto 02: Gamificación (Juegos de mesa educativos) -->
+              <div class="pp-photo-wrap" id="photo-wrap-1">
+                <img src="assets/slide12_gamificacion.jpg" alt="Alumnado participando en dinámicas lúdicas y juegos de mesa educativos">
+              </div>
+              <!-- Foto 03: Apoyos visuales (Guías visuales y pictogramas en el pupitre) -->
+              <div class="pp-photo-wrap" id="photo-wrap-2">
+                <img src="assets/slide12_apoyos_visuales.jpg" alt="Alumnado utilizando organizadores visuales y pictogramas en su pupitre">
+              </div>
+              <!-- Foto 04: tríada educativa, una sola imagen sin duplicados -->
+              <div class="pp-photo-wrap pp-photo-contain" id="photo-wrap-3">
+                <img class="pp-photo-fg" src="assets/slide12_triada.jpg" alt="Reunión de coordinación entre el profesorado y la familia">
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /pp-layout -->
+
+        <!-- 4. MODAL: REFERENCIA AL ESTUDIO CIENTÍFICO (CIENCIA LATINA 2026) -->
+        <div class="pp-modal-overlay" id="pp-modal" role="dialog" aria-modal="true" aria-labelledby="pp-modal-title" hidden>
+          <div class="pp-modal-box">
+            <button class="pp-modal-close" id="pp-modal-close" aria-label="Cerrar ventana modal" type="button">×</button>
+            <div class="pp-modal-inner">
+              <div class="pp-modal-cover">
+                <img src="assets/ciencia_latina_cover.png" alt="Portada de Ciencia Latina Revista Científica Multidisciplinar, Volumen 10 Número 1 (2026)">
+              </div>
+              <div class="pp-modal-info">
+                <div class="pp-modal-eyebrow">REFERENCIA BIBLIOGRÁFICA CIENTÍFICA</div>
+                <h2 class="pp-modal-title" id="pp-modal-title">Estrategias Pedagógicas Inclusivas en Estudiantes con TDAH</h2>
+                <div class="pp-modal-authors">
+                  <div class="pp-modal-author"><span class="pp-author-dot"></span>Fabiola Alexandra Ordóñez Montero</div>
+                  <div class="pp-modal-author"><span class="pp-author-dot"></span>Katherine Del Cisne Ayala Camacho</div>
+                  <div class="pp-modal-affil">Universidad Nacional de Loja</div>
+                </div>
+                <div class="pp-modal-meta">
+                  <div class="pp-modal-meta-row"><span class="pp-meta-label">Revista</span><span>Ciencia Latina Revista Científica Multidisciplinar</span></div>
+                  <div class="pp-modal-meta-row"><span class="pp-meta-label">Publicación</span><span>Volumen 10 · Número 1 (2026)</span></div>
+                  <div class="pp-modal-meta-row"><span class="pp-meta-label">Páginas</span><span>2509–2523</span></div>
+                  <div class="pp-modal-meta-row"><span class="pp-meta-label">Sección</span><span>Ciencias de la Educación</span></div>
+                </div>
+                <div class="pp-modal-doi">
+                  <span class="pp-meta-label">DOI</span>
+                  <code>https://doi.org/10.37811/cl_rcm.v10i1.22405</code>
+                </div>
+                <a class="pp-modal-doi-btn" href="https://doi.org/10.37811/cl_rcm.v10i1.22405" target="_blank" rel="noopener noreferrer">
+                  <span>Acceder al artículo (DOI)</span> <span class="pp-btn-arrow">↗</span>
+                </a>
+                <p class="pp-modal-disclaimer">Las estrategias recogidas en esta diapositiva se fundamentan en los resultados y metodología del estudio referenciado. No se atribuyen al artículo conclusiones no reflejadas en su texto original.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 13 — SECCIÓN CONCLUSIONES -->
+      <section class="slide section-break" data-title="04 · Conclusiones" aria-label="Diapositiva 13: conclusiones">
+        <div class="section-line" aria-hidden="true"></div>
+        <div class="section-index">04<span>.</span></div>
+        <div class="section-block"><span class="eyebrow">CUARTO BLOQUE</span><p class="section-script">Para terminar:</p><h2>Conclusiones</h2></div>
+        <div class="section-side-word">REFLEXIONAR</div>
+      </section>
+
+      <!-- 14 — CONCLUSIONES -->
+      <section class="slide" data-title="Conclusiones" aria-label="Diapositiva 14: conclusiones">
+        <div class="eyebrow">04 / CONCLUSIONES</div>
+        <div class="page-heading"><h2><span class="serif-accent">Conclusiones</span></h2><p>Tres ideas esenciales</p></div>
+        <div class="conclusions-grid blur-target">
+          <article class="conclusion-card"><div class="conclusion-visual"><svg viewBox="0 0 260 150" role="img" aria-label="Diversidad de estudiantes y atención a cada necesidad">
+  <circle cx="130" cy="72" r="62" fill="#edf3e7" />
+  <path d="M60 126 Q60 105 85 102 L106 102 Q126 108 126 126" fill="#aac7a5"/>
+  <path d="M137 126 Q137 102 160 100 L178 100 Q198 105 201 126" fill="#a8b8ce"/>
+  <circle cx="96" cy="78" r="20" fill="#ddac8b"/><circle cx="169" cy="75" r="20" fill="#ce9879"/>
+  <path d="M78 76 Q78 49 96 51 Q116 52 115 77 Q104 69 95 63 Q88 73 78 76" fill="#514e44"/>
+  <path d="M150 68 Q150 47 169 48 Q192 47 189 77 L182 70 L173 58 L161 68Z" fill="#74614e"/>
+  <circle cx="52" cy="48" r="18" fill="#e5eedc" stroke="#7fa06e" stroke-width="2"/>
+  <path d="M46 48h12m-6-6v12" stroke="#668856" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="213" cy="39" r="14" fill="#f7efe4" stroke="#d2b488" stroke-width="2"/>
+  <path d="M208 39l4 4 8-9" stroke="#a47e4c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg></div><h3>Atención individualizada</h3><p>Cada alumno con TDAH tiene necesidades diferentes.</p></article>
+          <article class="conclusion-card"><div class="conclusion-visual"><svg viewBox="0 0 260 150" role="img" aria-label="Dos personas dialogando y un corazón">
+  <ellipse cx="131" cy="126" rx="96" ry="15" fill="#e9efe4"/>
+  <path d="M62 122 Q65 95 92 96 Q118 96 121 123" fill="#8fab9b"/><path d="M139 123 Q141 95 171 95 Q197 96 202 123" fill="#b7c6a9"/>
+  <circle cx="91" cy="72" r="23" fill="#dbac8f"/><circle cx="171" cy="70" r="23" fill="#d6ab8c"/>
+  <path d="M69 68 Q67 42 92 44 Q117 43 113 74 Q98 58 83 60Z" fill="#62524b"/>
+  <path d="M150 68 Q145 43 170 44 Q195 43 195 71 Q187 58 173 55Z" fill="#725e46"/>
+  <path d="M111 34 C111 22 124 17 131 29 C140 17 153 22 153 34 C153 45 131 60 131 60 C131 60 111 45 111 34Z" fill="#d98c8c"/>
+  <path d="M112 78 Q130 89 150 78" fill="none" stroke="#6a8c6e" stroke-width="3" stroke-dasharray="4 5"/>
+</svg></div><h3>Comprensión y empatía</h3><p>No confundir sus dificultades con desinterés o mala conducta.</p></article>
+          <article class="conclusion-card"><div class="conclusion-visual"><svg viewBox="0 0 260 150" role="img" aria-label="Familia, centro educativo y profesorado trabajando en red">
+  <path d="M130 32 L65 112 L200 112Z" fill="none" stroke="#a2bb99" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="130" cy="32" r="25" fill="#e5f1df" stroke="#7a9e77" stroke-width="2"/>
+  <path d="M118 40v-15l12-9 12 9v15 M123 40v-11h14v11" stroke="#507456" stroke-width="2.4" fill="none" stroke-linejoin="round"/>
+  <circle cx="65" cy="112" r="25" fill="#f2eadf" stroke="#c0a47d" stroke-width="2"/>
+  <circle cx="59" cy="105" r="5" fill="#8c735e"/><circle cx="73" cy="105" r="5" fill="#8c735e"/>
+  <path d="M48 119q3-13 11-11m0 0q9-2 13 11m0 0q4-10 13-10" stroke="#8c735e" stroke-width="2" fill="none"/>
+  <circle cx="200" cy="112" r="25" fill="#e7edf6" stroke="#91a5bb" stroke-width="2"/>
+  <path d="M186 103l14-8 14 8-14 8Z M191 110v11h18v-11" stroke="#5a778e" stroke-width="2.3" fill="none" stroke-linejoin="round"/>
+  <circle cx="130" cy="86" r="10" fill="#8da981"/>
+</svg></div><h3>Trabajo coordinado</h3><p>Colaboración entre docentes, orientación y familias.</p></article>
+        </div>
+        <div class="conclusion-end"><span class="tiny-star">✳</span><span>EDUCAR DESDE LA COMPRENSIÓN</span><span class="tiny-star">✳</span></div>
+      </section>
+
+      <!-- 15 — AGRADECIMIENTOS -->
+      <section class="slide thanks" data-title="Muchas gracias" aria-label="Diapositiva 15: gracias">
+        <div class="thanks-ellipse" aria-hidden="true"></div><div class="thanks-dot td1" aria-hidden="true"></div><div class="thanks-dot td2" aria-hidden="true"></div>
+        <div class="thanks-inner"><span class="eyebrow">FIN DE LA PRESENTACIÓN</span><p>Muchas</p><h2>GRACIAS<span>.</span></h2><div class="thanks-rule"></div></div>
+      </section>
+
+      <div class="slide-corner" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </main>
+
+  <nav class="controls" aria-label="Controles de presentación">
+    <div class="control-brand"><span class="control-bubble">✳</span><span><strong>TDAH</strong><small>Presentación interactiva</small></span></div>
+    <div class="control-nav">
+      <button type="button" id="prev" class="nav-arrow" aria-label="Diapositiva anterior" title="Anterior (←)">‹</button>
+      <div class="progress-area"><div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div><span id="slide-count" class="slide-count">01 <span>/ 14</span></span></div>
+      <button type="button" id="next" class="nav-arrow" aria-label="Diapositiva siguiente" title="Siguiente (→)">›</button>
+    </div>
+    <div class="control-actions">
+      <button id="help-btn" class="control-small" title="Ayuda (?)" aria-label="Ver atajos de teclado">? <span>Ayuda</span></button>
+      <button id="fullscreen-btn" class="control-small expand" title="Pantalla completa (F)" aria-label="Pantalla completa">⛶</button>
+    </div>
+  </nav>
+
+  <!-- Recursos opcionales del presentador: mosca, desenfoque y sonido. -->
+  <div id="fly-layer" class="fly-layer" aria-hidden="true"><img id="fly-gif" src="assets/mosca.gif" alt=""></div>
+  <div id="sound-indicator" class="sound-indicator" role="status" aria-live="polite">◉ &nbsp; Distracción auditiva</div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div id="overlay" class="overlay" hidden>
+    <div class="overlay-backdrop" data-close-overlay></div>
+    <div class="overlay-dialog" role="dialog" aria-modal="true" aria-labelledby="overlay-title"><button id="close-overlay" class="overlay-close" aria-label="Cerrar">×</button><div id="overlay-content"></div></div>
+  </div>
+</body>
+</html>
