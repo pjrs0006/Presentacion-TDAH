@@ -1537,3 +1537,23 @@
   letter-spacing: normal;
   transition: none;
 }
+
+
+/* DIAPOSITIVA 7 — botones de características en columna */
+.slide-characteristics-dynamic .char-button-group--vertical {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-flow: row;
+  gap: 9px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.slide-characteristics-dynamic .char-button-group--vertical .char-subtype-btn {
+  width: 100%;
+  min-width: 0;
+  height: 52px;
+  justify-content: space-between;
+  padding: 0 18px;
+  font-size: 16px;
+}
