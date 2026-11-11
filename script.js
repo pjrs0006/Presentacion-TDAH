@@ -29,7 +29,7 @@
     const availableWidth = Math.max(320, rect.width - 30);
     const availableHeight = Math.max(250, rect.height - 24);
     const scale = Math.min(availableWidth / 1440, availableHeight / 810);
-    stage.style.setProperty('--stage-scale', String(scale));
+    stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
   }
 
   function notify(message, duration = 2200) {
