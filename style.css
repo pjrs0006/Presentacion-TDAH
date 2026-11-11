@@ -1557,3 +1557,34 @@
   padding: 0 18px;
   font-size: 16px;
 }
+
+/* Diapositiva 7: lista original con los subtipos convertidos en botones. */
+.slide-characteristics-dynamic .char-intro-points .char-subtypes-heading {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+.slide-characteristics-dynamic .char-button-group--vertical {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 7px;
+  margin-top: 7px;
+  width: 100%;
+}
+.slide-characteristics-dynamic .char-button-group--vertical .char-subtype-btn {
+  height: 43px;
+  min-height: 43px;
+  width: 100%;
+  min-width: 0;
+  padding-inline: 17px;
+  font-size: 17px;
+}
+.slide-characteristics-dynamic .char-after-buttons {
+  flex: 0 0 auto;
+  color: #465047;
+  font-size: 20.5px;
+  line-height: 1.27;
+  margin: 11px 0 0;
+}
+.slide-characteristics-dynamic .char-after-buttons strong {
+  font-weight: 730;
+}
